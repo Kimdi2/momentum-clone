@@ -1,16 +1,9 @@
-// const -> default
-// let   -> sometimes
-// var   -> never use
+const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
 
-const a = 10;
-const b = 2;
-let myName = 'bigPerson';
+//  get item form array
+console.log(daysOfWeek[3]);
 
-console.log(a + b);
-console.log(a * b);
-console.log(a / b);
-console.log('hello ' + myName);
-
-myName = 'superBigPerson';
-
-console.log('your new name is ' + myName);
+// add one more day to array
+console.log(daysOfWeek);
+daysOfWeek.push("sun");
+console.log(daysOfWeek);
