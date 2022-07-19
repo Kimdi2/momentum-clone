@@ -1,17 +1,16 @@
-const playerName = "bigPerson";
-const playerPoints = 99;
-const playerHandsome = false;
-const playerFat = "superFat";
+function greetings(name, age = 1) {
+  console.log("hello my name is " + name);
+  console.log(`I'm ${age} years old.`);
+}
 
+greetings("bigPerson");
+greetings("kimdi");
+// ----------------------------------------------
 const player = {
-  name: "bigPerson",
-  points: 99,
-  handsome: false,
-  fat: "superFat",
+  name: "bigperson",
+  sayHello: function (othersName) {
+    console.log("hello! " + othersName + ", Nice to meet you.");
+  },
 };
-console.log(player.fat);
-console.log(player["name"]);
-
-console.log(player);
-player.levels = 3;
-console.log(player);
+console.log(player.name);
+player.sayHello("kimdi");
