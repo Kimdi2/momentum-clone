@@ -1,9 +1,17 @@
-const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
+const playerName = "bigPerson";
+const playerPoints = 99;
+const playerHandsome = false;
+const playerFat = "superFat";
 
-//  get item form array
-console.log(daysOfWeek[3]);
+const player = {
+  name: "bigPerson",
+  points: 99,
+  handsome: false,
+  fat: "superFat",
+};
+console.log(player.fat);
+console.log(player["name"]);
 
-// add one more day to array
-console.log(daysOfWeek);
-daysOfWeek.push("sun");
-console.log(daysOfWeek);
+console.log(player);
+player.levels = 3;
+console.log(player);
