@@ -1,4 +1,4 @@
-const title = document.getElementById("title");
+const title = document.querySelector(".hello:nth-child(2) h1"); //like css form
 
-title.innerText = "Got you!";
-document.body.style.backgroundColor = "black";
+title.innerText = "Grab it!";
+console.log(title);
