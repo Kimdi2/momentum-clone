@@ -1,16 +1,22 @@
-function greetings(name, age = 1) {
-  console.log("hello my name is " + name);
-  console.log(`I'm ${age} years old.`);
-}
-
-greetings("bigPerson");
-greetings("kimdi");
-// ----------------------------------------------
-const player = {
-  name: "bigperson",
-  sayHello: function (othersName) {
-    console.log("hello! " + othersName + ", Nice to meet you.");
+const calculator = {
+  add: function (x, y) {
+    console.log(x + y);
+  },
+  minus: function (x, y) {
+    console.log(x - y);
+  },
+  times: function (x, y) {
+    console.log(x * y);
+  },
+  divide: function (x, y) {
+    console.log(x / y);
+  },
+  powerOf: function (x, y) {
+    console.log(x ** y);
   },
 };
-console.log(player.name);
-player.sayHello("kimdi");
+calculator.add(5, 1);
+calculator.minus(3, 9);
+calculator.times(7, 4);
+calculator.divide(5, 2);
+calculator.powerOf(5, 3);
