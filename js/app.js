@@ -1,4 +1,12 @@
-const title = document.querySelector(".hello:nth-child(2) h1"); //like css form
+const title = document.querySelector(".hello h1"); //like css form
 
-title.innerText = "Grab it!";
-console.log(title);
+function handleTitleClick() {
+  if (title.style.color !== "blue") {
+    title.style.color = "blue";
+  } else {
+    title.style.color = "black";
+  }
+  console.log(title.style.color);
+}
+
+title.addEventListener("click", handleTitleClick);
