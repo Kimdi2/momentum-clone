@@ -1,22 +1,43 @@
-const title = document.querySelector(".hello h1"); //like css form
+const h1 = document.querySelector(".hello h1"); //like css form
 
-function handleTitleClick() {
-  if (title.style.color !== "blue") {
-    title.style.color = "blue";
+function handleH1Click() {
+  if (h1.style.color !== "blue") {
+    h1.style.color = "blue";
   } else {
-    title.style.color = "black";
+    h1.style.color = "black";
   }
-  console.log(title.style.color);
+  console.log(h1.style.color);
 }
 
 function handleMouseEnter() {
-  title.innerText = "mouse is here";
+  h1.innerText = "mouse is here";
 }
 
 function handleMouseLeave() {
-  title.innerText = "mouse is gone";
+  h1.innerText = "mouse is gone";
 }
 
-title.addEventListener("click", handleTitleClick);
-title.addEventListener("mouseenter", handleMouseEnter);
-title.addEventListener("mouseleave", handleMouseLeave);
+function handleWindowResize() {
+  document.body.style.backgroundColor = "tomato";
+}
+
+function handleWindowCopy() {
+  alert("copier!");
+}
+
+function handleWindowOffline() {
+  alert("SOS no WIFI!");
+}
+
+function handleWindowOnline() {
+  alert("ALL GOOOOOOD");
+}
+
+h1.addEventListener("click", handleH1Click);
+h1.addEventListener("mouseenter", handleMouseEnter);
+h1.addEventListener("mouseleave", handleMouseLeave);
+
+window.addEventListener("resize", handleWindowResize);
+window.addEventListener("copy", handleWindowCopy);
+window.addEventListener("offline", handleWindowOffline);
+window.addEventListener("online", handleWindowOnline);
