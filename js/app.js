@@ -1,7 +1,9 @@
-const h1 = document.querySelector(".hello h1"); //like css form
+const loginForm = document.querySelector("#login-form");
+const loginInput = document.querySelector("#login-form input");
 
-function handleH1Click() {
-  h1.classList.toggle("clicked");
+function onLoginSubmit(info) {
+  info.preventDefault();
+  console.log(info);
 }
 
-h1.addEventListener("click", handleH1Click);
+loginForm.addEventListener("submit", onLoginSubmit);
