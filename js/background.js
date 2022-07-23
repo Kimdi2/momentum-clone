@@ -19,3 +19,7 @@ const bgImage = document.createElement("img");
 bgImage.src = `img/${chosenImage}`;
 
 document.body.appendChild(bgImage);
+/*
+  appendChild -> body 가장 뒤에 존재
+  prepend -> body 가장 앞에 존재
+*/
