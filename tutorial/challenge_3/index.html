@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Challenge 3</title>
+    <style>
+      .result {
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1>Random Number Game</h1>
+      <h2>
+        Generate a number between 0 and
+        <input type="number" class="maxNumber" />
+      </h2>
+      Guess the number:
+      <input type="number" class="inputNumber" />
+      <input type="submit" class="playBtn" value="Play!" />
+    </form>
+    <div class="match"></div>
+    <div class="result"></div>
+    <script src="game.js"></script>
+  </body>
+</html>
