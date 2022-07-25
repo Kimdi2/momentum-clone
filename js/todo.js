@@ -19,7 +19,7 @@ function deleteToDo(event) {
   const li = event.target.parentElement;
   toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
   li.remove();
-  // saveToDos();
+  saveToDos(); // saveToDos 를 통해 filter를 진행한 toDos를 localStorage 로 저장
 }
 
 function paintToDo(newToDo) {
@@ -53,7 +53,7 @@ toDoForm.addEventListener("submit", handleToDoSubmit);
 // arrow function: (argument) => function 내용;
 const savedToDos = localStorage.getItem(TODOS_KEY);
 
-console.log(savedToDos);
+// console.log(savedToDos);
 if (savedToDos) {
   const parsedToDos = JSON.parse(savedToDos);
   toDos = parsedToDos;
